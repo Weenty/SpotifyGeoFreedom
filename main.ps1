@@ -21,7 +21,7 @@ function Get-ArgumentList {
 
     return [string]$argumentList
 }
-  
+Write-Host Get-ArgumentList
  
 function Start-SpotifyAndWaitForLogin {
     param (
