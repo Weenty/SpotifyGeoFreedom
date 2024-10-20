@@ -4,4 +4,4 @@ apt install python3
 # python3 -m venv venv
 # source venv/bin/activate
 pip install -r req.txt
-python.exe ./main.py --login="$LOGIN" --password="$PASS"
+python3 ./main.py --login="$LOGIN" --password="$PASS"
