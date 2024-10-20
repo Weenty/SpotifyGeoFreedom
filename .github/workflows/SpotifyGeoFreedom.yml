@@ -26,4 +26,4 @@ jobs:
     - name: Сlient download and login
       shell: bash
       run: |
-        ./main.sh
+        chmod +x main.sh && ./main.sh
