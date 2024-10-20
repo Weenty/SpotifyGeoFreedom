@@ -1,1 +1,2 @@
-echo "run!"
+echo $LOGIN
+echo $PASS
