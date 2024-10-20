@@ -8,7 +8,7 @@ on:
       
 jobs:
   run-powershell:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     env:
       LOGIN: '${{ secrets.LOGIN }}'
@@ -19,11 +19,11 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Get Runner's IP info
-      shell: powershell
+      shell: bash
       run: |
-        Invoke-RestMethod -Uri "https://ipinfo.io/json"
+        curl -s "https://ipinfo.io/json"
 
     - name: Сlient download and login
-      shell: powershell
+      shell: bash
       run: |
-        .\main.ps1  
+        echo "run script!"
