@@ -21,8 +21,8 @@ function Get-ArgumentList {
 
     return [string]$argumentList
 }
+Write-Host "1111111111111"
 Write-Host Get-ArgumentList
- 
 function Start-SpotifyAndWaitForLogin {
     param (
         [string]$LogDirectory = "$env:TEMP\logSpot",
