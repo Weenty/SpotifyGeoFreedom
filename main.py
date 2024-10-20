@@ -36,5 +36,4 @@ if __name__ == "__main__":
     username = args.login
     password = args.password
     proxy = None
-    print(username, password)
-    # login_to_website(url, username, password, proxy)
+    login_to_website(url, username, password, proxy)
