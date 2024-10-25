@@ -13,7 +13,7 @@ class Browser:
     def create(cls, url, proxy=None):
         self = cls()
         chrome_options = Options()
-        # chrome_options.add_argument('--headless')
+        chrome_options.add_argument('--headless')
         chrome_options.set_capability('goog:loggingPrefs', {'performance': 'ALL'})
         chrome_options.add_argument("--disable-logging")
         chrome_options.add_argument("--window-size=1920,1080")
